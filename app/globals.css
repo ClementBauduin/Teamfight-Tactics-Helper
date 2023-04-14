@@ -21,6 +21,7 @@ body {
   background: url('../public/assets/img/bgblur.png') no-repeat top;
   background-size: 1920px 1080px;
   background-color: coral;
+  padding: 0px 16px 0px 16px;
   
 }
 

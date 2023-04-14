@@ -1,0 +1,56 @@
+.result {
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 12px;
+  color: var(--green4);
+  text-shadow: 0 0 5px var(--green4);
+  border: 1px solid var(--gold);
+  background-color: rgb(0, 0, 0);
+  color: var(--gold);
+  padding: 10px 0 10px 0;
+}
+
+.appContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+@media screen and (min-width: 1500px) {
+  .appContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .result {
+    font-size: 1.6rem;
+  }
+  .appContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 625px) {
+  .result {
+    font-size: 1.4rem;
+  }
+  .appContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .result {
+    font-size: 0.7rem;
+  }
+  .appContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}/*# sourceMappingURL=App.module.css.map */

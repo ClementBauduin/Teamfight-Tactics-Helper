@@ -1,0 +1,32 @@
+.searchbarContainer {
+  box-sizing: border-box;
+  outline: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.searchbarContainer input {
+  background: 0;
+  outline: none;
+  background-color: rebeccapurple;
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  color: white;
+  padding: 0.6rem;
+  width: 100%;
+}
+.searchbarContainer input::-moz-placeholder {
+  color: white;
+}
+.searchbarContainer input::placeholder {
+  color: white;
+}
+.searchbarContainer input:focus::-moz-placeholder {
+  color: transparent;
+}
+.searchbarContainer input:focus::placeholder {
+  color: transparent;
+}/*# sourceMappingURL=SearchBar.module.css.map */

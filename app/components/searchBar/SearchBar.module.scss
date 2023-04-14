@@ -1,0 +1,36 @@
+.searchbarContainer {
+
+    box-sizing: border-box;
+    outline: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+
+    input {
+        background: 0;
+        outline: none;
+        background-color: rebeccapurple;
+        border: 1px solid var(--gold);
+        border-radius: 6px;
+        color: white;
+        padding: 0.6rem;
+        width: 100%;
+
+
+        &::placeholder {
+            color: white;
+        }
+
+        //remove placeholder color on focus
+        &:focus {
+            &::placeholder {
+                color: transparent;
+            }
+        }
+
+
+    }
+}

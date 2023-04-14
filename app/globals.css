@@ -1,0 +1,48 @@
+html,input,textarea {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  background: coral; 
+  font-family: 'Beaufort for LOL','Spiegel', sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: url('../public/assets/img/bgblur.png') no-repeat top;
+  background-size: 1920px 1080px;
+  background-color: coral;
+  
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+	text-decoration: none;
+} 
+
+/* End of css reset */
+:root {
+  --green1: #CCFF33;
+  --green2: #9EF01A;
+  --green3: #70E000;
+  --green4: #38B000;
+  --green5: #008000;
+  --green6: #007200;
+  --green7: #006400;
+  --green8: #011e0e;
+  --green8-rgba: #011e0e30;
+
+  --gold : #f2bf43;
+}

@@ -1,0 +1,48 @@
+.cardWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 6px;
+    max-width: 256px;
+    background-color: rebeccapurple;
+    border: 1px solid var(--gold);
+
+    &:hover {
+
+        box-shadow: 0 0 10px 0 var(--gold);
+
+    }
+
+    .sideInfo {
+        padding: 1rem 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-family: "Spiegel";
+        font-weight: bold;
+        font-size: 12px;
+
+        input {
+
+            font-family: inherit;
+            line-height: 1.15;
+            margin: 0;
+            overflow: visible;
+            box-sizing: border-box;
+            outline: none !important;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            padding: 0px 10px;
+            color: white;
+            max-width: 100%;
+            width: 40px;
+            border: 1px solid var(--gold);
+            border-radius: 6px;
+            text-align: center;
+
+
+
+        }
+    }
+}

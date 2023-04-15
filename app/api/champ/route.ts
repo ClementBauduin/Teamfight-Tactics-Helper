@@ -29,7 +29,7 @@ export async function GET(request: Request) {
     "TFT_AurelionSol": {
       "name": "Aurelion Sol",
       "tier": 4,
-      "image": "/img/AurelionSol.png"
+      "image": "/img/Aurelionsol.png"
     },
 
     "TFT_Belveth": {

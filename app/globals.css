@@ -31,7 +31,13 @@ ol, ul {
 
 a {
 	text-decoration: none;
-} 
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    padding: 1px;
+  }
+}
 
 /* End of css reset */
 :root {
@@ -47,3 +53,4 @@ a {
 
   --gold : #f2bf43;
 }
+

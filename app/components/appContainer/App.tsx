@@ -11,6 +11,7 @@ export default function App() {
   const [search, setSearch] = useState<string>('')
   const [tier, setTier] = useState<number>(1)
   const [count, setCount] = useState<number>(0)
+  const [sameTier, setSameTier] = useState<number>(0)
 
 
   const poolSizeTotal:any = {
@@ -30,7 +31,8 @@ export default function App() {
   }
 
   const totalChampTier = poolSizeTotal[tier]
-  let probability = ((poolSizeTier[tier]-count)/(totalChampTier-count)*100).toFixed(2)
+
+  let probability = ((poolSizeTier[tier]-count)/(totalChampTier-count-sameTier)*100).toFixed(2)
   
   
 
@@ -75,8 +77,8 @@ export default function App() {
 
     return (
       <div>
-          <SearchBar setSearch={setSearch}/>
-          <p className={styles.result }>La probabilité de trouver votre champion est de {probability}%</p>
+          <SearchBar setSearch={setSearch} setSameTier={setSameTier}/>
+          <p className={styles.result}>Probability to find your champ : {probability}%</p>
 
           <div className={styles.appContainer}>
             {cards}
